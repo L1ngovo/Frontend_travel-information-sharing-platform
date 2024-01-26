@@ -1,61 +1,46 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
-</script>
-
 <template>
     <div>
-         <!-- <el-button type="primary">button</el-button> -->
-         <!-- <i class="ri-arrow-left-up-line"></i> -->
+        <div class="container">
+            <div class="header">
+                头部
+            </div>
+            <div class="main">
+                主体
+            </div>
+            <div class="footer">
+                尾部
+            </div>
+        </div>
     </div>
-  <div id="app" class="container">
-    <nav class="navbar">
-      <div class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home<i class="ri-arrow-left-up-line"></i></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
- 
 </template>
 
+<script setup lang="ts">
+
+</script>
+
 <style lang="scss">
-//   html,body,#app{
-//     margin: 0px;
-//     padding: 0px;
-//     height: 100%;
-    
-//   } 
-.navbar {
-    background-color: #333;
-    padding: 1rem;
+
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header{
     position: fixed;
+    z-index: 99;
     top: 0;
+    background-color: #e99595;
     width: 100%;
-    z-index: 100;
-  }
+    height: 50px;
+}
+.main{
+    flex: 1;
+    background-color: #ac3c3c;
+    // height: calc(100vh - 50px);
+    
+}
+.footer{
+    background-color: #5f2626;
+}
 
-  .navbar-brand {
-    color: #fff;
-  }
-
-  .navbar-nav .nav-link {
-    color: #fff;
-  }
-
-  .navbar-nav .nav-link:hover {
-    color: #ccc;
-  }
 </style>

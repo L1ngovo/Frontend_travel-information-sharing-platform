@@ -1,46 +1,31 @@
-# vue-project
+## Some digression（一些题外话）
 
-This template should help get you started developing with Vue 3 in Vite.
+- This is a project that I want to write on a whim. It can be regarded as a practice, and the technology is really endless.
 
-## Recommended IDE Setup
+  这是我突发奇想要写的一个项目，算得上是练手，技术真的学无止尽，边学边写
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- So the project is definitely going to be rough and I'm going to take my time optimizing it.
 
-## Type Support for `.vue` Imports in TS
+  所以项目肯定会很粗糙，等我慢慢优化
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Project Introduction（项目介绍）
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+- The project is tentatively designated as the front and back end separation project.
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+  项目暂定为前后端分离项目
 
-## Customize configuration
+- The frontend is expected to use Vue3 as a framework, Typescript for writing, Sass for styling, Pinia for state management, and Vite for packaging.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+  前端预计将会使用Vue3作为框架，Typescript进行编写，Sass设置样式，Pinia进行状态管理，Vite进行打包
 
-## Project Setup
+- The backend language is tentatively Java, the framework is tentatively Spring Boot, and the database is yet to be determined.
 
-```sh
-npm install
-```
+  后端使用语言暂定为Java，框架暂定Spring Boot，数据库尚未确定
 
-### Compile and Hot-Reload for Development
+- I will develop the back-end after the front-end page is basically built, because I have little knowledge about the back-end and need to learn it systematically.
 
-```sh
-npm run dev
-```
+  将会在前端页面大体搭建完成后进行后端的开发，因为后端的相关知识我接触甚少，需要进行系统的学习
 
-### Type-Check, Compile and Minify for Production
+- The estimated development time for the project is undetermined, but I hope to have some basic functionality implemented within three months.
 
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+  项目预计开发耗时未定，但我希望能在三个月内完成一些基础功能的实现
