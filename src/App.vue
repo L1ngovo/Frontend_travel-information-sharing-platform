@@ -1,46 +1,62 @@
-<template>
-    <div>
-        <div class="container">
-            <div class="header">
-                头部
-            </div>
-            <div class="main">
-                主体
-            </div>
-            <div class="footer">
-                尾部
-            </div>
+<template>  
+    <div class="layout">  
+      <div class="nav-bar">
+        <NavBar></NavBar>
+      </div>  
+      <div class="main-content">
+        <div class="main">
+            hahaha,wozhinengshuoaiqueshibiwoniu
+            <router-view></router-view>
         </div>
-    </div>
-</template>
-
-<script setup lang="ts">
-
-</script>
-
-<style lang="scss">
-
-.container{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-.header{
-    position: fixed;
-    z-index: 99;
-    top: 0;
-    background-color: #e99595;
-    width: 100%;
-    height: 50px;
-}
-.main{
-    flex: 1;
-    background-color: #ac3c3c;
-    // height: calc(100vh - 50px);
+      </div>  
+      <div class="footer">
+        <FooterNav></FooterNav>
+      </div>  
+    </div>  
+  </template>  
     
-}
-.footer{
-    background-color: #5f2626;
-}
+  <script setup>  
+    import NavBar from './components/Top_navigation_bar.vue'
+    import FooterNav from './components/Footer_navigation.vue'
+  </script>  
+    
+  <style lang="scss">  
+  .layout {  
+    display: flex;  
+    flex-direction: column;  
+    height: 100vh; /* 视口高度 */  
+  }  
+  .nav-bar {  
+    height: 80px; /* 根据你的需求调整导航栏高度 */  
+    // background-color: #333; /* 导航栏背景色 */  
+    background-color:  rgba(51, 51, 51,1);
+    box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
+    position: sticky; /* 实现吸顶效果 */  
+    top: 0; /* 与顶部对齐 */  
+    width: 100%; /* 宽度占满整个屏幕 */  
+    opacity: 1; /* 或者使用rgba颜色值，如rgba(0, 0, 0, 1) */ 
+  }  
+  .main-content {  
+    flex: 1; /* 占据可用空间 */  
+    display: flex; /* 内容居中放置 */  
+    justify-content: center; /* 水平居中 */  
+    align-items: center; /* 垂直居中 */  
+    /* background-color: #b03333; */
+  }  
+  .main {
+    width: 80%;
+    height: 100%;
+    // background-color: #c62828;
+    box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
+  }
+  .footer {  
+    height: 60px; /* 根据你的需求调整底部高度 */ 
+    // border: 1px solid; 
+    box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
+    // background-color: #111; /* 底部背景色 */  
+    /* position: sticky; 让底部始终保持在中部区域的下方 */
+    bottom: 0; /* 与底部对齐 */  
+    width: 100%; /* 宽度占满整个屏幕 */  
+  }  
+  </style>
 
-</style>
