@@ -16,8 +16,8 @@
   </template>  
     
   <script setup>  
-    import NavBar from './components/Top_navigation_bar.vue'
-    import FooterNav from './components/Footer_navigation.vue'
+    import NavBar from './components/general/Top_navigation_bar.vue'
+    import FooterNav from './components/general/Footer_navigation.vue'
   </script>  
     
   <style lang="scss">  

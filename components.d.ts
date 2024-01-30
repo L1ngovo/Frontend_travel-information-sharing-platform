@@ -12,8 +12,9 @@ declare module 'vue' {
     ElFooter: typeof import('element-plus/es')['ElFooter']
     ElHeader: typeof import('element-plus/es')['ElHeader']
     ElMain: typeof import('element-plus/es')['ElMain']
-    Footer_navigation: typeof import('./src/components/Footer_navigation.vue')['default']
+    Footer_navigation: typeof import('./src/components/general/Footer_navigation.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Home_page: typeof import('./src/components/custom/home_page.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
     IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
@@ -23,7 +24,7 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
-    Top_navigation_bar: typeof import('./src/components/Top_navigation_bar.vue')['default']
+    Top_navigation_bar: typeof import('./src/components/general/Top_navigation_bar.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
 }
