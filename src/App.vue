@@ -5,7 +5,6 @@
       </div>  
       <div class="main-content">
         <div class="main">
-            hahaha,wozhinengshuoaiqueshibiwoniu
             <router-view></router-view>
         </div>
       </div>  

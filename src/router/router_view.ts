@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { home_page_route } from './sub_router/general/home_page'
+import { home_page_route } from './sub_router/home_page'
 
-export const routers = [
-    home_page_route.home_page,
+export const router_view = [
+    home_page_route.home_page_index,
 ]

@@ -9,9 +9,9 @@
                 <li><a href="#">联系我们</a></li>  
                 </ul>  
             </nav>  
-            <p class="copyright">&copy; 2023 公司名称. 版权所有.</p>  
+            <!-- <p class="copyright">&copy; 2023 公司名称. 版权所有.</p>  
             <p class="contact">电话: +123 4567890</p>  
-            <p class="contact">邮箱: [example@example.com]</p>  
+            <p class="contact">邮箱: [example@example.com]</p>   -->
         </footer>
     </div>
 </template>
