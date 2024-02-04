@@ -20,6 +20,7 @@ nav {
   background-color: #333;  
 // box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
   overflow: hidden;  
+  z-index: 100;
 }  
   
 nav ul {  

@@ -34,6 +34,7 @@
     top: 0; /* 与顶部对齐 */  
     width: 100%; /* 宽度占满整个屏幕 */  
     opacity: 1; /* 或者使用rgba颜色值，如rgba(0, 0, 0, 1) */ 
+    z-index: 99;
   }  
   .main-content {  
     flex: 1; /* 占据可用空间 */  
