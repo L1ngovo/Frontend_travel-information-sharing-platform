@@ -2,10 +2,11 @@
     <div class="home-page-layout">
         <div class="home-page-navigation-area">
             <div class="home-page-navigation-area-classification">
-                <div class="home-page-navigation-area-classification-menu">
-                    <div class="home-page-navigation-area-classification-menu-item">
+                <div class="home-page-navigation-area-classification-menu" v-for="item in menuItems" :key="item">
+                    <!-- <div class="home-page-navigation-area-classification-menu-item">
                         yiji
-                    </div>
+                    </div> -->
+                    {{ item.name }}
                 </div>
                 <div class="home-page-navigation-area-classification-sub-menu">
                     <ul>
@@ -71,13 +72,14 @@ const menuItems = [
 .home-page-navigation-area-classification {
     flex: 1;
     background-color: #c4b7b7;
-    display: flex;
+    // display: flex;
 }
 
 .home-page-navigation-area-classification-sub-menu {
     display: none;
 }
-.home-page-navigation-area-classification-menu-item:hover + .home-page-navigation-area-classification-sub-menu {
+
+.home-page-navigation-area-classification-menu:hover + .home-page-navigation-area-classification-sub-menu {
     display: block;
 }
 
