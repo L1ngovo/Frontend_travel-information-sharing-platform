@@ -7,18 +7,16 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElButton: typeof import('element-plus/es')['ElButton']
     ElCarousel: typeof import('element-plus/es')['ElCarousel']
     ElCarouselItem: typeof import('element-plus/es')['ElCarouselItem']
-    ElContainer: typeof import('element-plus/es')['ElContainer']
-    ElFooter: typeof import('element-plus/es')['ElFooter']
-    ElHeader: typeof import('element-plus/es')['ElHeader']
-    ElMain: typeof import('element-plus/es')['ElMain']
+    ElMenu: typeof import('element-plus/es')['ElMenu']
+    ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
+    ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
     Footer_navigation: typeof import('./src/components/general/Footer_navigation.vue')['default']
     Home_page: typeof import('./src/components/custom/home_page.vue')['default']
-    Navbar: typeof import('./src/components/navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Side_multilevel_menu: typeof import('./src/components/general/side_multilevel_menu.vue')['default']
     Top_navigation_bar: typeof import('./src/components/general/Top_navigation_bar.vue')['default']
   }
 }
