@@ -12,11 +12,15 @@ declare module 'vue' {
     ElMenu: typeof import('element-plus/es')['ElMenu']
     ElMenuItem: typeof import('element-plus/es')['ElMenuItem']
     ElSubMenu: typeof import('element-plus/es')['ElSubMenu']
-    Footer_navigation: typeof import('./src/components/general/Footer_navigation.vue')['default']
+    footer_navigation: typeof import('./src/components/general/footer_navigation.vue')['default']
+    Footer_navigation: typeof import('./src/components/general/footer_navigation.vue')['default']
     Home_page: typeof import('./src/components/custom/home_page.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Row_upon_content: typeof import('./src/components/general/row_upon_content.vue')['default']
+    Row_upon_content_detail: typeof import('./src/components/custom/row_upon_content_detail.vue')['default']
     Side_multilevel_menu: typeof import('./src/components/general/side_multilevel_menu.vue')['default']
-    Top_navigation_bar: typeof import('./src/components/general/Top_navigation_bar.vue')['default']
+    top_navigation_bar: typeof import('./src/components/general/top_navigation_bar.vue')['default']
+    Top_navigation_bar: typeof import('./src/components/general/top_navigation_bar.vue')['default']
   }
 }

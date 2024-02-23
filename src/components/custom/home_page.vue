@@ -23,7 +23,7 @@
             <!-- </div> -->
             <div class="home-page-navigation-area-slideshow"  @mouseover="ClearInterval"  @mouseleave="SetInterval">
                 <div class="block text-center">
-                    <el-carousel height="180px">
+                    <el-carousel height="280px">
                     <el-carousel-item v-for="item in imgdata" :key="item">
                         <img :src="item.img" style="max-height: 100%;object-fit: cover;">
                     </el-carousel-item>
@@ -33,15 +33,7 @@
 
         </div>
         <div class="home-page-content-area">
-            <div class="container">  
-                <div  
-                v-for="num in numbers"  
-                :key="num"  
-                class="number-box"  
-                >  
-                {{ num }}  
-                </div>  
-            </div> 
+            <RowContent/>
         </div>
     </div>
 </template>
@@ -49,6 +41,7 @@
 <script setup>
 import { ref } from 'vue'
 import MenuItem from '@/components/general/side_multilevel_menu.vue'
+import RowContent from '@/components/general/row_upon_content.vue'
 
 const imgdata = ref([
 {img :"https://pic.imgdb.cn/item/65bc9b8b871b83018adbf6ae.png" },
@@ -75,7 +68,7 @@ const menuItems = [
     }  
 ]  
 
-const numbers = ref(Array.from({ length: 30 }, (_, i) => i + 1))
+
 
 
 </script>
@@ -88,7 +81,7 @@ const numbers = ref(Array.from({ length: 30 }, (_, i) => i + 1))
 }
 .home-page-navigation-area {
     display: flex;
-    height: 200px;
+    height: 300px;
     background-color: #d24f4f;
     & > * {
         margin: 10px;
@@ -123,8 +116,9 @@ const numbers = ref(Array.from({ length: 30 }, (_, i) => i + 1))
 }
 .home-page-content-area {
     flex-grow: 1;
-    background-color: #e3c7c7;
     overflow-y: auto;
+    box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
+    margin-top: 20px;
 }
 
 
@@ -143,29 +137,7 @@ const numbers = ref(Array.from({ length: 30 }, (_, i) => i + 1))
 .el-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
 }
-
-
-.container {  
-  display: flex;  
-  flex-wrap: wrap; /* 允许子元素换行 */  
-  justify-content: space-around; /* 子元素之间平均分布空间 */  
-  align-items: center;  
-  padding: 20px;  
-  border: 1px solid #ccc;  
-  background-color: #f5f5f5;  
-}  
-  
-.number-box {  
-  display: flex;  
-  justify-content: center;  
-  align-items: center;  
-  width: calc(100% / 6 - 10px); /* 假设每行显示6个数字，减去一些间距 */  
-  height: 30px;  
-  margin: 5px;  
-  border: 1px solid #000;  
-  background-color: #ddd;  
-  font-size: 16px;  
-}   
+ 
 
 
 </style>

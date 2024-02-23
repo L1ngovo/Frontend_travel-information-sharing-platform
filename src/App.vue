@@ -15,8 +15,8 @@
   </template>  
     
   <script setup>  
-    import NavBar from './components/general/Top_navigation_bar.vue'
-    import FooterNav from './components/general/Footer_navigation.vue'
+    import NavBar from './components/general/top_navigation_bar.vue'
+    import FooterNav from './components/general/footer_navigation.vue'
   </script>  
     
   <style lang="scss">  
@@ -41,13 +41,13 @@
     display: flex; /* 内容居中放置 */  
     justify-content: center; /* 水平居中 */  
     align-items: center; /* 垂直居中 */  
-    /* background-color: #b03333; */
+    background-color: #f4f4f4;
   }  
   .main {
     width: 80%;
     height: 100%;
     // background-color: #c62828;
-    box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
+    // box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
   }
   .footer {  
     height: 60px; /* 根据你的需求调整底部高度 */ 
