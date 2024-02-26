@@ -4,9 +4,9 @@
         <NavBar></NavBar>
       </div>  
       <div class="main-content">
-        <div class="main">
+        <!-- <div class="main"> -->
             <router-view></router-view>
-        </div>
+        <!-- </div> -->
       </div>  
       <div class="footer">
         <FooterNav></FooterNav>
