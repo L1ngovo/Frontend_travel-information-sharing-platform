@@ -24,32 +24,45 @@
                     文章具体内容
                 </div>
                 <div style="height: 1px;background-color: black;margin: 1rem 0;"></div>
-                <div>
+                <div style="display: flex; flex-direction: column;">
                     评论
-                    <div>
-                        评论数 用户名
-                    </div>
-                    <div>
+                    <div style="display: flex; justify-content: space-between;">
                         <div>
-                            头像 输入框
+                            评论数
                         </div>
                         <div>
+                            用户名
+                        </div>
+                    </div>
+                    <div>
+                        <div style="display: flex; ">
+                            <div style="flex: 1;">
+                                头像  
+                            </div>
+                            <div style="flex: 3">
+                                输入框
+                            </div>
+                        </div>
+                        <div style="float: right;">
                             按钮
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div style="display: flex; ">
+                        <div style="flex: 1;">
                             头像
                         </div>
-                        <div>
-                            <div>
-                                用户名
+                        <div style="flex: 3; display: flex;">
+                            <div style="flex: 1; display: flex;">
+                                <div>
+                                    用户名
+                                </div>
+                                <div>
+                                    时间
+                                </div>
                             </div>
-                            <div>
-                                时间
-                            </div>
-                            <div>
-                                点赞 转发
+
+                            <div style="flex: 1;">
+                                点赞转发
                             </div>
                         </div>
                     </div>
