@@ -1,16 +1,14 @@
 <template>  
     <div class="layout">  
-      <div class="nav-bar">
-        <NavBar></NavBar>
-      </div>  
-      <div class="main-content">
-        <!-- <div class="main"> -->
+        <div class="nav-bar">
+            <NavBar></NavBar>
+        </div>  
+        <div class="main-content">
             <router-view></router-view>
-        <!-- </div> -->
-      </div>  
-      <div class="footer">
-        <FooterNav></FooterNav>
-      </div>  
+        </div>  
+        <div class="footer">
+            <FooterNav></FooterNav>
+        </div>  
     </div>  
   </template>  
     
@@ -19,7 +17,7 @@
     import FooterNav from './components/general/footer_navigation.vue'
   </script>  
     
-  <style lang="scss">  
+  <style lang="scss" scoped>  
   .layout {  
     display: flex;  
     flex-direction: column;  
@@ -43,20 +41,12 @@
     align-items: center; /* 垂直居中 */  
     background-color: #f4f4f4;
   }  
-  .main {
-    width: 80%;
-    height: 100%;
-    // background-color: #c62828;
-    // box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
+
+  .footer {
+
+    height: 80px;
+    width: 100%;
   }
-  .footer {  
-    height: 60px; /* 根据你的需求调整底部高度 */ 
-    // border: 1px solid; 
-    box-shadow: 0.1em 0.1em 0.5em rgba(144, 144, 144, 0.3);
-    // background-color: #111; /* 底部背景色 */  
-    /* position: sticky; 让底部始终保持在中部区域的下方 */
-    bottom: 0; /* 与底部对齐 */  
-    width: 100%; /* 宽度占满整个屏幕 */  
-  }  
+
   </style>
 

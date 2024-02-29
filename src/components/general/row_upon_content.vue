@@ -31,7 +31,7 @@ const SkipToDetails = (num) => {
 
 </script>
 
-<style>
+<style scoped>
 .container {  
   display: flex;  
   flex-wrap: wrap; /* 允许子元素换行 */  
